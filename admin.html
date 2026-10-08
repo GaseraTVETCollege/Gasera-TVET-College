@@ -273,7 +273,7 @@ hr{
         <textarea id="nb" placeholder="Oduu ykn beeksisa barreessi"></textarea>
 
         <label>Suuraa</label>
-        <input id="nf" type="file" accept="image/*">
+        <input id="nf" type="file" accept="image"*">
 
         <button class="primary" onclick="saveNews()">
           📢 Publish
@@ -295,7 +295,7 @@ hr{
         <input id="gt" placeholder="Maqaa ykn ibsa suuraa">
 
         <label>Suuraa</label>
-        <input id="gf" type="file" accept="image/*">
+        <input id="gf" type="file" accept="image"/*">
 
         <button class="primary" onclick="saveGallery()">
           ⬆️ Upload
@@ -626,7 +626,7 @@ async function saveProgram(){
 
     const imageUrl =
       await up(
-        'images',
+        'image',
         $('pf').files[0]
       );
 
